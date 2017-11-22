@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NTBD</string>
+
+    <!-- For Nav -->
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!--Categories Page-->
+    <string name="catHeading">Food Categories</string>
+
+
+    <!-- Home page-->
+    <string name="popHeading">Most Popular Food Dishes</string>
+    <string name="popButton1">Wings</string>
+    <string name="popButton2">Pizza</string>
+    <string name="popButton3">Burgers</string>
+    <string name="popButton4">Fries</string>
+    <string name="popButton5">Pastas</string>
+    <string name="popButton6">Steak</string>
+    <string name="popButton7">Salads</string>
+    <string name="popButton8">Chicken</string>
+</resources>
