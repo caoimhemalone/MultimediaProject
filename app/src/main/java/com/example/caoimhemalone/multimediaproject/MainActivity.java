@@ -1,5 +1,7 @@
 package com.example.caoimhemalone.multimediaproject;
 
+//Code for slider taken from https://www.android-examples.com/android-multiple-auto-image-slider-example-tutorial-using-online-url/
+
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -56,11 +58,11 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
 
-        Hash_file_maps.put("Android CupCake", "http://androidblog.esy.es/images/cupcake-1.png");
-        Hash_file_maps.put("Android Donut", "http://androidblog.esy.es/images/donut-2.png");
-        Hash_file_maps.put("Android Eclair", "http://androidblog.esy.es/images/eclair-3.png");
-        Hash_file_maps.put("Android Froyo", "http://androidblog.esy.es/images/froyo-4.png");
-        Hash_file_maps.put("Android GingerBread", "http://androidblog.esy.es/images/gingerbread-5.png");
+        Hash_file_maps.put("Restaurant Name1", "food");
+        Hash_file_maps.put("Restaurant Name2", "@drawable/food");
+        Hash_file_maps.put("Restaurant Name3", "@drawable/food");
+        Hash_file_maps.put("Restaurant Name4", "@drawable/food");
+        Hash_file_maps.put("Restaurant Name5", "@drawable/food");
 
         for (String name : Hash_file_maps.keySet()) {
 
