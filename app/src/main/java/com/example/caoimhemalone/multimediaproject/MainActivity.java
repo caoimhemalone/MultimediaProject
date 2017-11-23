@@ -2,6 +2,7 @@ package com.example.caoimhemalone.multimediaproject;
 
 //Code for slider taken from https://www.android-examples.com/android-multiple-auto-image-slider-example-tutorial-using-online-url/
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private String mActivityTitle;
 
 
+
     SliderLayout sliderLayout;
     HashMap<String,String> Hash_file_maps ;
 
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(activity_main);
+
 
         mDrawerList = (ListView) findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -58,11 +61,13 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
 
-        Hash_file_maps.put("Restaurant Name1", "food");
-        Hash_file_maps.put("Restaurant Name2", "@drawable/food");
-        Hash_file_maps.put("Restaurant Name3", "@drawable/food");
-        Hash_file_maps.put("Restaurant Name4", "@drawable/food");
-        Hash_file_maps.put("Restaurant Name5", "@drawable/food");
+
+        Hash_file_maps.put("Restaurant Name1", "https://storage.googleapis.com/lg_meetup_images/street-food-tracking.jpg");
+        Hash_file_maps.put("Restaurant Name2", "https://upload.wikimedia.org/wikipedia/commons/2/2e/Fast_food_meal.jpg");
+        Hash_file_maps.put("Restaurant Name3", "https://assets.epicurious.com/photos/596d14096c42213eb20a2b65/2:1/w_1260%2Ch_630/How-To-Make-Boneless-Buffalo-Chicken-Wings-071220172005.jpg");
+        Hash_file_maps.put("Restaurant Name4", "http://images.media-allrecipes.com/userphotos/960x960/3757728.jpg");
+        Hash_file_maps.put("Restaurant Name5", "http://zznbobs.com/wp-content/uploads/2015/03/Cheese-Fries.jpg");
+
 
         for (String name : Hash_file_maps.keySet()) {
 
@@ -80,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
-        sliderLayout.setDuration(3000);
+        sliderLayout.setDuration(5000);
         sliderLayout.addOnPageChangeListener(this);
     }
 
@@ -186,5 +191,17 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    //For opening new food dish page
+    public void openDish(View view)
+    {
+        Intent intent = new Intent(this, DishActivity.class);
+        startActivity(intent);
+    }
+    public void openHome(View view)
+    {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

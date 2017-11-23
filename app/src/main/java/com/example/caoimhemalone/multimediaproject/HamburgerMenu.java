@@ -6,21 +6,23 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
-import static com.example.caoimhemalone.multimediaproject.R.layout.activity_categories;
 
+import static com.example.caoimhemalone.multimediaproject.R.layout.activity_main;
 
 /**
- * Created by caoimhemalone on 21/11/2017.
+ * Created by caoimhemalone on 22/11/2017.
  */
 
-public class categories extends AppCompatActivity {
+public class HamburgerMenu extends AppCompatActivity {
 
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
@@ -28,10 +30,13 @@ public class categories extends AppCompatActivity {
     private ActionBarDrawerToggle mDrawerToggle;
     private String mActivityTitle;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_categories);
+        setContentView(activity_main);
+
 
         mDrawerList = (ListView) findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -42,18 +47,19 @@ public class categories extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
     }
 
+
     private void addDrawerItems() {
-        String[] navArray = { "Categories", "Top Restaurants",  "blank", "Contact Us" };
+        String[] navArray = { "Categories", "Top Restaurants", "blank", "blank", "Contact Us" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, navArray);
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                //  Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -122,10 +128,5 @@ public class categories extends AppCompatActivity {
     }
 
 
-    public void openHome(View view)
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
 
 }

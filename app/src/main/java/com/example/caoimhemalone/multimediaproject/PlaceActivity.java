@@ -1,5 +1,8 @@
 package com.example.caoimhemalone.multimediaproject;
 
+/**
+ * Created by caoimhemalone on 22/11/2017.
+ */
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -13,15 +16,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import static com.example.caoimhemalone.multimediaproject.R.layout.activity_categories;
+import static com.example.caoimhemalone.multimediaproject.R.layout.activity_place;
 
-
-/**
- * Created by caoimhemalone on 21/11/2017.
- */
-
-public class categories extends AppCompatActivity {
-
+public class PlaceActivity extends AppCompatActivity{
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> mAdapter;
@@ -31,7 +28,7 @@ public class categories extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_categories);
+        setContentView(activity_place);
 
         mDrawerList = (ListView) findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -50,7 +47,6 @@ public class categories extends AppCompatActivity {
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -120,7 +116,6 @@ public class categories extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
     public void openHome(View view)
     {

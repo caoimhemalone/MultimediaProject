@@ -1,71 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/cat_heading"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/catHeading"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:layout_weight="0.07" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/cat1"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:text="Button" />
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/cat2"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:lineSpacingExtra="14sp"
-        android:text="Button" />
 
-    <Button
-        android:id="@+id/cat3"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:text="Button" />
+            <SearchView
+                android:id="@+id/Search"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="10dp" />
 
-    <Button
-        android:id="@+id/cat4"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:text="Button" />
 
-    <Button
-        android:id="@+id/cat5"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:text="Button" />
 
-    <Button
-        android:id="@+id/cat6"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:text="Button" />
+            <LinearLayout
+                android:id="@+id/cat_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp">
 
-    <Button
-        android:id="@+id/cat7"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:text="Button" />
+                <TextView
+                    android:id="@+id/catHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/catHeading"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/cat8"
-        android:layout_width="152dp"
-        android:layout_height="63dp"
-        android:layout_weight="0.07"
-        android:text="Button" />
-</LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/popButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton1"
+                        android:onClick="openDish"
+                        />
+
+                    <Button
+                        android:id="@+id/popButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/homebtn"
+                        android:elevation="0dp"
+                        android:text="@string/popButton2" />
+
+                    <Button
+                        android:id="@+id/popButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/popButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton5" />
+
+                    <Button
+                        android:id="@+id/popButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton4" />
+
+                    <Button
+                        android:id="@+id/popButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/popButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton7" />
+
+                    <Button
+                        android:id="@+id/popButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/homebtn"
+                        android:text="@string/popButton8" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

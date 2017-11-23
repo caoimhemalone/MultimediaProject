@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/Search"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+            android:id="@+id/ranking_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            >
+
+                <TextView
+                    android:id="@+id/dishHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/top_rest"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 1
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking1"
+                        android:text="@string/ranking1"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant1"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"
+                        android:onClick="openPlace"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer2"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 2
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking2"
+                        android:text="@string/ranking2"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant2"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer3"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 3
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking3"
+                        android:text="@string/ranking3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant3"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer4"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 4
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking4"
+                        android:text="@string/ranking4"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant4"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer5"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 5
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking5"
+                        android:text="@string/ranking5"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant5"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer6"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 6
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking6"
+                        android:text="@string/ranking6"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant6"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer7"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 7
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking7"
+                        android:text="@string/ranking7"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant7"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer8"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 8
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking8"
+                        android:text="@string/ranking8"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant8"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer9"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 9
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking9"
+                        android:text="@string/ranking9"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant9"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="60dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rankingsContainer10"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    //Rankings 10
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ranking10"
+                        android:text="@string/ranking10"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurant10"
+                        android:text="@string/restaurant1"
+                        android:layout_marginLeft="50dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/drawerPane"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+
+        <!-- Profile Box -->
+
+        <RelativeLayout
+            android:id="@+id/profileBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/appColour"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/icon2"
+                android:onClick="openHome"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NTBD"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:onClick="openHome"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="4dp"
+                    android:text="Find your favourite dishes"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:onClick="openHome"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- List of Actions (pages) -->
+        <ListView
+            android:id="@+id/navList"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profileBox"
+            android:background="#ffffffff"
+            android:choiceMode="singleChoice" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

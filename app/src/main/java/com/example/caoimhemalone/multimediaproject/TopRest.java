@@ -1,5 +1,9 @@
 package com.example.caoimhemalone.multimediaproject;
 
+/**
+ * Created by caoimhemalone on 23/11/2017.
+ */
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -13,15 +17,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import static com.example.caoimhemalone.multimediaproject.R.layout.activity_categories;
+import static com.example.caoimhemalone.multimediaproject.R.layout.activity_dish;
+import static com.example.caoimhemalone.multimediaproject.R.layout.activity_toprest;
 
-
-/**
- * Created by caoimhemalone on 21/11/2017.
- */
-
-public class categories extends AppCompatActivity {
-
+public class TopRest extends AppCompatActivity {
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> mAdapter;
@@ -31,7 +30,7 @@ public class categories extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_categories);
+        setContentView(activity_dish);
 
         mDrawerList = (ListView) findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -45,12 +44,11 @@ public class categories extends AppCompatActivity {
     }
 
     private void addDrawerItems() {
-        String[] navArray = { "Categories", "Top Restaurants",  "blank", "Contact Us" };
+        String[] navArray = { "Categories", "Top Restaurants", "blank", "blank", "Contact Us" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, navArray);
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -121,11 +119,9 @@ public class categories extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     public void openHome(View view)
     {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
 }

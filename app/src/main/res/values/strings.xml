@@ -20,4 +20,28 @@
     <string name="popButton6">Steak</string>
     <string name="popButton7">Salads</string>
     <string name="popButton8">Chicken</string>
+
+    <!-- Dish Page -->
+    <string name="dishHeading"> Best Restaurants for {Dish} in {location} </string>
+    <string name="ranking1">1.</string>
+    <string name="ranking2">2.</string>
+    <string name="ranking3">3.</string>
+    <string name="ranking4">4.</string>
+    <string name="ranking5">5.</string>
+    <string name="ranking6">6.</string>
+    <string name="ranking7">7.</string>
+    <string name="ranking8">8.</string>
+    <string name="ranking9">9.</string>
+    <string name="ranking10">10.</string>
+    <string name="restaurant1"> Restaurant Name </string>
+
+    <!-- Place Page -->
+    <string name="place_heading">{Restaurant/Place Name}</string>
+    <string name="place_about_title">About</string>
+    <string name="place_about_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+    </string>
+    <string name="place_photos">Photos</string>
+
+    <!-- Top Rest -->
+    <string name="top_rest">Top Restaurants in {location}</string>
 </resources>
