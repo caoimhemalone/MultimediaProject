@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">NTBD</string>
 
+    <string name="welcome"> Welcome to NTBD</string>
+
     <!-- For Nav -->
     <string name="action_settings">Settings</string>
     <string name="drawer_open">Open navigation drawer</string>

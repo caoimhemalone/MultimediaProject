@@ -85,7 +85,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant2"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -107,7 +108,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant3"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -129,7 +131,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant4"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -151,7 +154,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant5"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -173,7 +177,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant6"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -195,7 +200,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant7"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -217,7 +223,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant8"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -239,7 +246,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant9"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="60dp"/>
+                            android:layout_marginLeft="60dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -261,7 +269,8 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/restaurant10"
                             android:text="@string/restaurant1"
-                            android:layout_marginLeft="50dp"/>
+                            android:layout_marginLeft="50dp"
+                            android:onClick="openPlace"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

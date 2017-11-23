@@ -25,12 +25,12 @@
                     android:orientation="vertical">
 
 
-                    <SearchView
-                        android:id="@+id/Search"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="320dp"
-                        android:layout_marginTop="10dp" />
+                    <!--<SearchView-->
+                        <!--android:id="@+id/Search"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="320dp"-->
+                        <!--android:layout_marginTop="10dp" />-->
 
 
                     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -91,7 +91,8 @@
                                 android:layout_marginTop="18dp"
                                 android:background="@color/homebtn"
                                 android:elevation="0dp"
-                                android:text="@string/popButton2" />
+                                android:text="@string/popButton2"
+                                android:onClick="openDish"/>
 
                             <Button
                                 android:id="@+id/popButton3"
@@ -100,7 +101,8 @@
                                 android:layout_marginLeft="40dp"
                                 android:layout_marginTop="9dp"
                                 android:background="@color/homebtn"
-                                android:text="@string/popButton3" />
+                                android:text="@string/popButton3"
+                                android:onClick="openDish"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -116,7 +118,8 @@
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginTop="10dp"
                                 android:background="@color/homebtn"
-                                android:text="@string/popButton5" />
+                                android:text="@string/popButton5"
+                                android:onClick="openDish"/>
 
                             <Button
                                 android:id="@+id/popButton4"
@@ -125,7 +128,8 @@
                                 android:layout_marginLeft="30dp"
                                 android:layout_marginTop="24dp"
                                 android:background="@color/homebtn"
-                                android:text="@string/popButton4" />
+                                android:text="@string/popButton4"
+                                android:onClick="openDish"/>
 
                             <Button
                                 android:id="@+id/popButton6"
@@ -134,7 +138,8 @@
                                 android:layout_marginLeft="40dp"
                                 android:layout_marginTop="50dp"
                                 android:background="@color/homebtn"
-                                android:text="@string/popButton6" />
+                                android:text="@string/popButton6"
+                                android:onClick="openDish"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -150,7 +155,8 @@
                                 android:layout_marginLeft="4dp"
                                 android:layout_marginTop="3dp"
                                 android:background="@color/homebtn"
-                                android:text="@string/popButton7" />
+                                android:text="@string/popButton7"
+                                android:onClick="openDish"/>
 
                             <Button
                                 android:id="@+id/popButton8"
@@ -159,7 +165,8 @@
                                 android:layout_marginLeft="50dp"
                                 android:layout_marginTop="30dp"
                                 android:background="@color/homebtn"
-                                android:text="@string/popButton8" />
+                                android:text="@string/popButton8"
+                                android:onClick="openDish"/>
                         </LinearLayout>
 
                     </LinearLayout>

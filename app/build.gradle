@@ -30,4 +30,8 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.slider:library:1.1.5@aar'
     testCompile 'junit:junit:4.12'
+
+
+    //compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+
 }
