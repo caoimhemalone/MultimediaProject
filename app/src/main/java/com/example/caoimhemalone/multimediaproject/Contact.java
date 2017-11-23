@@ -1,9 +1,5 @@
 package com.example.caoimhemalone.multimediaproject;
 
-/**
- * Created by caoimhemalone on 23/11/2017.
- */
-
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -17,10 +13,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import static com.example.caoimhemalone.multimediaproject.R.layout.contact;
 
-import static com.example.caoimhemalone.multimediaproject.R.layout.activity_toprest;
+/**
+ * Created by caoimhemalone on 23/11/2017.
+ */
 
-public class TopRest extends AppCompatActivity {
+public class Contact extends AppCompatActivity {
+
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> mAdapter;
@@ -30,7 +30,7 @@ public class TopRest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_toprest);
+        setContentView(contact);
 
         mDrawerList = (ListView) findViewById(R.id.navList);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
@@ -149,4 +149,7 @@ public class TopRest extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+
+
 }

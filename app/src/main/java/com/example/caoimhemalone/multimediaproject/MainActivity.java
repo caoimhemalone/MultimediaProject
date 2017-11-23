@@ -100,8 +100,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     @Override
     public void onSliderClick(BaseSliderView slider) {
+        Intent intent;
+        intent = new Intent(getApplicationContext(), PlaceActivity.class);
+        startActivity(intent);
 
-        Toast.makeText(this,slider.getBundle().get("extra") + "",Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -118,15 +120,35 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
 
     private void addDrawerItems() {
-        String[] navArray = { "Categories", "Top Restaurants", "blank", "blank", "Contact Us" };
+        String[] navArray = {  "Home", "Top Restaurants", "Contact Us" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, navArray);
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-              //  Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                 Intent intent;
+                switch(position){
+                    case 0:
+                        intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
 
+
+                        break;
+                    case 1:
+                        intent = new Intent(MainActivity.this, TopRest.class);
+                        startActivity(intent);
+
+
+                        break;
+                    case 2:
+                        intent = new Intent(MainActivity.this, Contact.class);
+                        startActivity(intent);
+
+                        break;
+
+
+                }
             }
         });
     }
@@ -182,11 +204,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            startActivity(intent);
         }
 
         // Activate the navigation drawer toggle
         if (mDrawerToggle.onOptionsItemSelected(item)) {
+
             return true;
         }
 

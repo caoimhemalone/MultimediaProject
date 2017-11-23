@@ -4,7 +4,7 @@
     <string name="welcome"> Welcome to NTBD</string>
 
     <!-- For Nav -->
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Close App</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
@@ -46,4 +46,9 @@
 
     <!-- Top Rest -->
     <string name="top_rest">Top Restaurants in {location}</string>
+
+    <!-- Contact Page -->
+    <string name="contact">Contact Us</string>
+    <string name="phone"> Phone: 01 0000000 </string>
+    <string name="email"> Email: email@example.com </string>
 </resources>

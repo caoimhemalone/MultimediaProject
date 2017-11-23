@@ -28,6 +28,8 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".DishActivity"></activity>
         <activity android:name=".PlaceActivity"></activity>
+        <activity android:name=".Contact"></activity>
+        <activity android:name=".TopRest"></activity>
 
     </application>
 

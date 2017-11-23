@@ -44,15 +44,36 @@ public class DishActivity extends AppCompatActivity {
     }
 
     private void addDrawerItems() {
-        String[] navArray = { "Categories", "Top Restaurants", "blank", "blank", "Contact Us" };
+        String[] navArray = {  "Home","Top Restaurants", "Contact Us" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, navArray);
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //  Toast.makeText(MainActivity.this, "Time for an upgrade!", Toast.LENGTH_SHORT).show();
+                Intent intent;
+                switch(position){
+                    case 0:
+                        intent = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
 
 
+                        break;
+                    case 1:
+                        intent = new Intent(getApplicationContext(), TopRest.class);
+                        startActivity(intent);
+
+
+                        break;
+                    case 2:
+                        intent = new Intent(getApplicationContext(), Contact.class);
+                        startActivity(intent);
+
+                        break;
+
+
+                }
             }
         });
     }
@@ -108,6 +129,10 @@ public class DishActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            startActivity(intent);
             return true;
         }
 
