@@ -2,6 +2,8 @@ package com.example.caoimhemalone.multimediaproject;
 
 //Code for slider taken from https://www.android-examples.com/android-multiple-auto-image-slider-example-tutorial-using-online-url/
 
+//Code for hamburger menu taken from http://codetheory.in/android-navigation-drawer/
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
