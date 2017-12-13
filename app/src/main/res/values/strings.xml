@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">NTBD</string>
+    <string name="app_name">Bia Me</string>
 
-    <string name="welcome"> Welcome to NTBD</string>
+    <string name="welcome"> Welcome to Bia Me</string>
 
     <!-- For Nav -->
     <string name="action_settings">Close App</string>
@@ -24,7 +24,7 @@
     <string name="popButton8">Chicken</string>
 
     <!-- Dish Page -->
-    <string name="dishHeading"> Best Restaurants for {Dish} in {location} </string>
+    <string name="dishHeading"> Best Restaurants for {Dish} in Dublin </string>
     <string name="ranking1">1.</string>
     <string name="ranking2">2.</string>
     <string name="ranking3">3.</string>
@@ -49,6 +49,6 @@
 
     <!-- Contact Page -->
     <string name="contact">Contact Us</string>
-    <string name="phone"> Phone: 01 0000000 </string>
-    <string name="email"> Email: email@example.com </string>
+    <string name="phoneNumber"> Phone: 01 0000000 </string>
+    <string name="email"> Email: email@biame.com </string>
 </resources>

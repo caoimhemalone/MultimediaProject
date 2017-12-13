@@ -23,7 +23,10 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import static com.example.caoimhemalone.multimediaproject.R.layout.activity_main;
 
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ArrayAdapter<String> mAdapter;
     private ActionBarDrawerToggle mDrawerToggle;
     private String mActivityTitle;
+    private List <SliderInfo> sliderDetails;
 
 
 
@@ -63,12 +67,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
 
+        sliderDetails = new ArrayList<>();
 
-        Hash_file_maps.put("Restaurant Name1", "https://storage.googleapis.com/lg_meetup_images/street-food-tracking.jpg");
-        Hash_file_maps.put("Restaurant Name2", "https://upload.wikimedia.org/wikipedia/commons/2/2e/Fast_food_meal.jpg");
-        Hash_file_maps.put("Restaurant Name3", "https://assets.epicurious.com/photos/596d14096c42213eb20a2b65/2:1/w_1260%2Ch_630/How-To-Make-Boneless-Buffalo-Chicken-Wings-071220172005.jpg");
-        Hash_file_maps.put("Restaurant Name4", "http://images.media-allrecipes.com/userphotos/960x960/3757728.jpg");
-        Hash_file_maps.put("Restaurant Name5", "http://zznbobs.com/wp-content/uploads/2015/03/Cheese-Fries.jpg");
+
+        Hash_file_maps.put("Captain Americas", "https://pbs.twimg.com/media/CB-4TZmXIAABejj.jpg");
+        Hash_file_maps.put("Eddie Rockets", "https://i0.wp.com/boysiesburgerblog.com/wp-content/uploads/2015/09/original_EddieRockets.jpg?fit=1200%2C800");
+        Hash_file_maps.put("The Paddocks, Clonee", "http://blog.covertnine.com/wp-content/uploads/2013/12/steak-photo-e1444778831684-1024x663.jpg");
+        Hash_file_maps.put("Milanos", "https://media-cdn.tripadvisor.com/media/photo-s/02/23/a1/87/this-is-milano-s-pizza.jpg");
+        Hash_file_maps.put("The Porterhouse", "https://images-gmi-pmc.edge-generalmills.com/2031a382-71dc-4fd0-9ef7-72d011a9eebd.jpg");
 
 
         for (String name : Hash_file_maps.keySet()) {

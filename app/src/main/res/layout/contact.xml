@@ -25,12 +25,12 @@
                 android:orientation="vertical">
 
 
-                <SearchView
-                android:id="@+id/Search"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="320dp"
-                android:layout_marginTop="10dp" />
+                <!--<SearchView-->
+                <!--android:id="@+id/Search"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="320dp"-->
+                <!--android:layout_marginTop="10dp" />-->
 
                 <TextView
                     android:layout_width="match_parent"
@@ -42,8 +42,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/phone"
-                    android:textAlignment="center"/>
+                    android:text="@string/phoneNumber"
+                    android:textAlignment="center"
+                    android:autoLink="phone"
+                    android:linksClickable="true"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
