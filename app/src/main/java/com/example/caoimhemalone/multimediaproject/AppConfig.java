@@ -2,7 +2,6 @@ package com.example.caoimhemalone.multimediaproject;
 
 import android.util.Log;
 
-import com.firebase.client.Firebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 

@@ -36,6 +36,7 @@
     <string name="ranking9">9.</string>
     <string name="ranking10">10.</string>
     <string name="restaurant1"> Restaurant Name </string>
+    <string name="addRating">Add Rating</string>
 
     <!-- Place Page -->
     <string name="place_heading">{Restaurant/Place Name}</string>
@@ -49,6 +50,8 @@
 
     <!-- Contact Page -->
     <string name="contact">Contact Us</string>
-    <string name="phoneNumber"> Phone: 01 0000000 </string>
+    <string name="phoneNumber"> Phone: 010000000 </string>
     <string name="email"> Email: email@biame.com </string>
+
+
 </resources>

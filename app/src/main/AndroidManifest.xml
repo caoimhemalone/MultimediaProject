@@ -30,6 +30,7 @@
         <activity android:name=".PlaceActivity"></activity>
         <activity android:name=".Contact"></activity>
         <activity android:name=".TopRest"></activity>
+        <!--<activity android:name=".LoginActivity"></activity>-->
 
     </application>
 

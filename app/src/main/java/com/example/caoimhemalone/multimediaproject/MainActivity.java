@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     HashMap<String,String> Hash_file_maps ;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

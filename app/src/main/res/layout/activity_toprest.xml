@@ -272,6 +272,10 @@
                         android:layout_marginLeft="50dp"
                         android:onClick="openPlace"/>
                 </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/addRating"/>
 
             </LinearLayout>
 
@@ -316,7 +320,7 @@
                     android:id="@+id/categories"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NTBD"
+                    android:text="Bia Me"
                     android:textColor="#fff"
                     android:textSize="16sp"
                     android:textStyle="bold"
